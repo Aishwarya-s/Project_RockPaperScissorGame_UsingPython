@@ -1,7 +1,9 @@
 import random
-import art
+from art import logo
 
+print("Welcome to the Rock , paper, Scissor Game\n")
 print(logo)
+
 possible_actions = ["rock", "paper", "scissors"]
 repeat_game = True
 computer_score=0
@@ -55,7 +57,9 @@ while repeat_game:
     repeat_game=game(input("Do you want to continue? Y/N ").lower())
     if repeat_game == "end":
         break;
-print("Total Score : \n Computer Score: "+{computer_score}+" ,User Score: "+{user_score})
+# print the score
+print("Total Score:\n Computer Score:" + str({computer_score}) + " , User Score:" + str({user_score}))
+
 if user_score > computer_score :
     print("User won the Game !!!")
 elif user_score < computer_score :

@@ -1,5 +1,5 @@
 import random
-import art
+from art import logo
 
 print(logo)
 
@@ -22,7 +22,7 @@ while repeat_game:
   user_action = user_action - 1
   user_action = possible_actions[user_action]
   print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
-
+#game logic
   if user_action == computer_action:
     print(f"Both players selected {user_action}. It's a tie!")
   elif user_action == "rock":
@@ -40,7 +40,7 @@ while repeat_game:
         computer_score = computer_score + 1
   elif user_action == "paper":
     if computer_action == "rock":
-		print("Paper covers rock! You win!")
+        print("Paper covers rock! You win!")
         user_score = user_score + 1
     elif computer_action == "spock":
         print("Paper disproves spock! You win!")
