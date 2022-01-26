@@ -24,12 +24,12 @@ while repeat_game:
     #computer selecting random value from rock, paper and scissors
     computer_action = random.choice(possible_actions)
     #user input taken from console
-    user_action = input("Enter a choice (rock, paper, scissors): ")
+    user_action = input("Please input your choice (rock, paper, scissors): ")
     #print values chosen b computer and user
-    print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+    print(f"\nYou chose {user_action}, computer has chosen {computer_action}.\n")
     #game logic
     if user_action == computer_action:
-        print(f"Both players selected {user_action}. It's a tie!")
+        print(f"Both players have selected {user_action}. It's a tie!")
     #user chose rock
     elif user_action == "rock":
         if computer_action == "scissors":
